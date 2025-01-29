@@ -4,14 +4,12 @@
 
 using namespace std;
 
-// Define a structure for Contact
 struct Contact
 {
     string name;
     string phoneNumber;
 };
 
-// Function to add a contact
 void addContact(list<Contact> &phonebook)
 {
     Contact newContact;
@@ -24,7 +22,6 @@ void addContact(list<Contact> &phonebook)
     cout << "Contact added successfully!" << endl;
 }
 
-// Function to remove a contact
 void removeContact(list<Contact> &phonebook)
 {
     string name;
@@ -43,7 +40,6 @@ void removeContact(list<Contact> &phonebook)
     cout << "Contact not found!" << endl;
 }
 
-// Function to search for a contact
 void searchContact(const list<Contact> &phonebook)
 {
     string name;
@@ -63,7 +59,6 @@ void searchContact(const list<Contact> &phonebook)
     cout << "Contact not found!" << endl;
 }
 
-// Function to display all contacts
 void displayContacts(const list<Contact> &phonebook)
 {
     if (phonebook.empty())
